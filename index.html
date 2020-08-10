@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Educate My Kid</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+
+    <div class="outerContainer">
+        <div id="musicbox">
+        <audio id="myAudio">
+          <source src="Italian Morning.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    
+    
+        
+        </div>
+        
+        <div id="story" class="container">
+        </div>
+        
+          <footer>
+        <button class="music" onclick="pauseAudio()" type="button"><i class='fas fa-volume-mute'></i></button> 
+        <button class="music" onclick="playAudio()" type="button"><i class='fas fa-music'></i></button>
+        </footer>
+    </div>
+
+    
+    <script src="ink.js"></script>
+    <script src="InkTesting.js"></script>
+    <script src="main.js"></script>
+    
+
+    <script>
+        var x = document.getElementById("myAudio"); 
+
+        function playAudio() { 
+          x.play(); 
+        } 
+
+        function pauseAudio() { 
+          x.pause(); 
+        } 
+    </script>
+    
+  
+</body>
+</html>
